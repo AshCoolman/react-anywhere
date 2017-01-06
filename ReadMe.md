@@ -4,7 +4,7 @@ An opinionated environment for building cross-platform react apps with no config
 
 ### Getting Started
 
-```
+```sh
 # Install
 npm i -g react-anywhere
 
@@ -36,7 +36,7 @@ __DO NOT EDIT THESE RESERVED FILES!!__ They are considered an implementation det
 
 This warmup step can be run independently, and will force a refresh of the reserved files:
 
-```
+```sh
 react-anywhere init MyApp
 cd MyApp
 ls
@@ -49,7 +49,7 @@ ls
 
 The files are excluded from git with the default `.gitignore` file, and will be cleaned up as part of the npm `prepublish` hook. You can also clean up by hand:
 
-```
+```sh
 # Run this to clean up the junk that react-anywhere puts in your project root:
 react-anywhere clean
 ls
@@ -62,7 +62,7 @@ ls
 
 In the `package.json` of your project, you can specify which version of the environment should be used to run your app.
 
-```
+```json
 {
   "name": "MyApp",
   "version": "0.0.0",
@@ -78,7 +78,7 @@ When running `react-anywhere` inside of `MyApp`, this specified version gets use
 
 You can *always* override the version of `react-anywhere` that gets used to run a command:
 
-```
+```sh
 react-anywhere init MyApp --react-anywhere-version=0.1.0
 ```
 

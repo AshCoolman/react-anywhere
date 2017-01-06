@@ -6,7 +6,8 @@
     "postversion": "git push && git push --tags && npm publish"
   },
   "bin": {
-    "react-anywhere": "react-anywhere.js"
+    "react-anywhere": "react-anywhere.js",
+    "rany": "react-anywhere.js"
   },
   "dependencies": {
     "deep-equal": "^1.0.1",

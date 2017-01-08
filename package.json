@@ -3,7 +3,8 @@
   "version": "0.1.0-rc.2",
   "description": "An opinionated environment for building cross-platform react apps",
   "scripts": {
-    "postversion": "git push && git push --tags && npm publish"
+    "postversion": "git push && git push --tags && npm publish",
+    "test": "node ./test/index.js"
   },
   "bin": {
     "react-anywhere": "react-anywhere.js",

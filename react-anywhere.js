@@ -16,6 +16,7 @@ var raArgs = process.argv.slice(2);
 var raCmd = raArgs[0];
 var thisRaPath = __dirname;
 var thisRaVersion = require(path.join(thisRaPath, 'package.json')).version;
+var doChecks = require('./react-anywhere-checks')(process, raCmd, raArgs);
 
 // Step 1. Determinte what version of react-anywhere we want to use
 
